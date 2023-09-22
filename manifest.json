@@ -1,0 +1,12 @@
+{
+	"manifest_version" : 2,
+	"name" : "Instrument Boiler Plate",
+	"version" : "0.0",
+	"description" : "Modify my source to instrument native JavaScript",
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["src/script.js"],
+		"run_at": "document_start",
+		"all_frames" : true
+	}]
+}
